@@ -4,9 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="转载编程随想, Home">
-    <meta name="description" content="博客开张及本博客内容简介很久以前就想开一个博客，可惜一直忙于工作中，不能如愿。拜2008年的全球金融危机所赐，我不再像以前那么忙碌，终于能够抽时间把以前的一些经验和平时的一些心得体会写下来。希望这个博客能够让读者有所收获。
-初步考虑写如下一">
+    <meta name="keywords" content="centos7配置网卡为静态IP, Home">
+    <meta name="description" content="1． 打开虚拟机后，桌面右键打开Open Terminal
+2． 使用命令 su 切换到root账户
+3． 用vim编辑器打开网卡配置文件
+4． Vim /etc/sysconfig/network-scripts/ifcfg-ens33
+">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -18,7 +21,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>转载编程随想 | Home</title>
+    <title>centos7配置网卡为静态IP | Home</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -313,12 +316,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/14.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/5.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">转载编程随想</h1>
+                    <h1 class="description center-align post-title">centos7配置网卡为静态IP</h1>
                 </div>
             </div>
         </div>
@@ -340,8 +343,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E7%BC%96%E7%A8%8B%E9%9A%8F%E6%83%B3/">
-                                <span class="chip bg-color">编程随想</span>
+                            <a href="/tags/centos7/">
+                                <span class="chip bg-color">centos7</span>
+                            </a>
+                        
+                            <a href="/tags/%E7%BD%91%E5%8D%A1%E9%85%8D%E7%BD%AE/">
+                                <span class="chip bg-color">网卡配置</span>
                             </a>
                         
                     </div>
@@ -356,7 +363,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-12-23
+                    2021-12-25
                 </div>
                 
 
@@ -365,7 +372,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    297
+                    85
                 </div>
                 
 
@@ -387,9 +394,18 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="博客开张及本博客内容简介"><a href="#博客开张及本博客内容简介" class="headerlink" title="博客开张及本博客内容简介"></a><a target="_blank" rel="noopener" href="https://program-think.blogspot.com/2009/01/test.html">博客开张及本博客内容简介</a></h1><p>很久以前就想开一个博客，可惜一直忙于工作中，不能如愿。<br>拜2008年的全球金融危机所赐，我不再像以前那么忙碌，终于能够抽时间把以前的一些经验和平时的一些心得体会写下来。<br>希望这个博客能够让读者有所收获。</p>
-<p>初步考虑写如下一些方面的内容：<br>★对于开发人员的个人发展和成长的体会<br>主要介绍一些方法论相关的东东（比如：学习方法、思维方式、做事习惯等），毕竟“<strong>授人以鱼不如授人以渔</strong>”。<br>★关于 C++、Java、Python 语言<br>主要介绍和编程语言相关的开发经验。会比较侧重于开发跨平台，高性能、可扩展性方面的话题。<br>★关于软件工程<br>主要介绍软件工程相关的知识、项目管理的经验、复杂系统的架构设计等。<br>★关于管理<br>主要介绍企业管理相关的经验和职场心得。</p>
-<p>如果有空，我也会顺便八卦一下 IT 业界的新动态。</p>
+                <p>1． 打开虚拟机后，桌面右键打开Open Terminal</p>
+<p>2． 使用命令 su 切换到root账户</p>
+<p>3． 用vim编辑器打开网卡配置文件</p>
+<p>4． Vim /etc/sysconfig/network-scripts/ifcfg-ens33</p>
+<p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225153113536.png" alt="image-20211225153113536"></p>
+<p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225153131923.png" alt="image-20211225153131923"></p>
+<p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225153131923.png"></p>
+<p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225153208160.png" alt="image-20211225153208160"></p>
+<p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225153225002.png" alt="image-20211225153225002"></p>
+<p>5.然后按ESC然后按Shiftt+: 冒号进入命令行模式输入 “wq”保存退出</p>
+<p>6.使用命令重启网卡 systemctl restart network</p>
+<p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225153250495.png" alt="image-20211225153250495"></p>
 
                 
             </div>
@@ -398,6 +414,41 @@
             
 
     <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">柒妖</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="http://aisibuhuipao.github.io/2021/12/25/centos7%E9%85%8D%E7%BD%AE%E7%BD%91%E5%8D%A1%E4%B8%BA%E9%9D%99%E6%80%81IP/">http://aisibuhuipao.github.io/2021/12/25/centos7%E9%85%8D%E7%BD%AE%E7%BD%91%E5%8D%A1%E4%B8%BA%E9%9D%99%E6%80%81IP/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">柒妖</a>
+                    !
+                </span>
+            </div>
         
     </div>
 
@@ -419,8 +470,12 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E7%BC%96%E7%A8%8B%E9%9A%8F%E6%83%B3/">
-                                    <span class="chip bg-color">编程随想</span>
+                                <a href="/tags/centos7/">
+                                    <span class="chip bg-color">centos7</span>
+                                </a>
+                            
+                                <a href="/tags/%E7%BD%91%E5%8D%A1%E9%85%8D%E7%BD%AE/">
+                                    <span class="chip bg-color">网卡配置</span>
                                 </a>
                             
                         </div>
@@ -470,13 +525,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/12/23/Hugo/">
+                <a href="/2021/12/25/Linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="Hugo第一次搭建博客">
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="Linux基础命令">
                         
-                        <span class="card-title">Hugo第一次搭建博客</span>
+                        <span class="card-title">Linux基础命令</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -487,7 +542,7 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-12-23
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-12-25
                         </span>
                         <span class="publish-author">
                             
@@ -500,8 +555,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Hugo/">
-                        <span class="chip bg-color">Hugo</span>
+                    <a href="/tags/Linux/">
+                        <span class="chip bg-color">Linux</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%91%BD%E4%BB%A4/">
+                        <span class="chip bg-color">命令</span>
                     </a>
                     
                 </div>
@@ -515,13 +574,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/12/20/%E6%9D%AD%E5%B7%9E/">
+                <a href="/2021/12/25/ubuntu/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="来到杭州~">
+                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="ubuntu安装">
                         
-                        <span class="card-title">来到杭州~</span>
+                        <span class="card-title">ubuntu安装</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -532,7 +591,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-20
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-25
                             </span>
                         <span class="publish-author">
                             
@@ -545,8 +604,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E7%94%9F%E6%B4%BB/">
-                        <span class="chip bg-color">生活</span>
+                    <a href="/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/">
+                        <span class="chip bg-color">虚拟机</span>
+                    </a>
+                    
+                    <a href="/tags/ubuntu/">
+                        <span class="chip bg-color">ubuntu</span>
                     </a>
                     
                 </div>

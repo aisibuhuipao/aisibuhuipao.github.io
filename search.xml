@@ -4,6 +4,136 @@
   
     
     <entry>
+      <title>LAMP搭建</title>
+      <link href="/2021/12/25/LAMP%E6%90%AD%E5%BB%BA/"/>
+      <url>/2021/12/25/LAMP%E6%90%AD%E5%BB%BA/</url>
+      
+        <content type="html"><![CDATA[<p>yum安装apache+php+mysql，配置开机自启</p><p><code>yum install -y httpd mariadb-server php php-mysql php-common php-gd php-mbstring php-mcrypt php-devel php-xml</code></p><p>配置防火墙开机不启动</p><p><code>systemctl disable firewalld</code></p><p>停止防火墙</p><p><code>systemctl stop firewalld</code></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225160955245.png" alt="image-20211225160955245"></p><p>设置数据库开机启动</p><p><code>systemctl enable mariadb</code></p><p><code>systemctl start mariadb</code></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225161605939.png" alt="image-20211225161605939"></p><p>编辑文件 使 apache 网页显示php基本信息</p><p><code>vim /var/www/heml/index.php</code></p><figure class="highlight php"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?</span></span><br><span class="line"></span><br><span class="line">phpinfo();</span><br><span class="line"></span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></tbody></table></figure><p>打开网页看看<img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225162322514.png" alt="image-20211225162322514"></p><p>编辑配置文件关闭SElinux安全模块</p><p><code>vim /etc/sysconfig/selinux</code></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225162010980.png" alt="image-20211225162010980"></p><p>配置mysql </p><p><code>mysql_secure_installation</code></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225162104003.png" alt="image-20211225162104003"></p><p>是否设置root 密码        y</p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225162356614.png" alt="image-20211225162356614"></p><p>是否删除匿名用户        y</p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225162424048.png" alt="image-20211225162424048"></p><p>是否允许root远程登录        y</p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225162456282.png" alt="image-20211225162456282"></p><p>是否删除测试数据库        y</p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225162513236.png" alt="image-20211225162513236"></p><p>是否刷新权限        y</p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225162530272.png" alt="image-20211225162530272"></p><p>登录mysql</p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225162547106.png" alt="image-20211225162547106"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> LAMP </tag>
+            
+            <tag> apache </tag>
+            
+            <tag> php </tag>
+            
+            <tag> mysql </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>源码安装nginx</title>
+      <link href="/2021/12/25/%E6%BA%90%E7%A0%81%E5%AE%89%E8%A3%85nginx/"/>
+      <url>/2021/12/25/%E6%BA%90%E7%A0%81%E5%AE%89%E8%A3%85nginx/</url>
+      
+        <content type="html"><![CDATA[<p>源码安装nginx，下载html源代码，把源代码运行起来。</p><p>在<a href="http://nginx.org/download/nginx-1.20.2.tar.gz%E4%B8%8B%E8%BD%BD%E6%9C%AC%E5%9C%B0">http://nginx.org/download/nginx-1.20.2.tar.gz下载本地</a></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225155336921.png" alt="image-20211225155336921"></p><p>在文件存放目录右键打开终端</p><p><code>scp .\nginx-1.28.2.tar.gz root@192.168.3.128:/root</code></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225155357240.png" alt="image-20211225155357240"></p><p>解压</p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225155424411.png" alt="image-20211225155424411"></p><p>./ 运行configure</p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225155458169.png" alt="image-20211225155458169"></p><p>错误提示：没有PCRE库</p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225155511400.png" alt="image-20211225155511400"></p><p>安装 gcc pcre pcre-devel 库</p><p><code>yum install -y gcc pcre pcre-devel zlib liberary</code></p><p>配置目录</p><p>/uer/bin/ = 软件二进制文件</p><p>/etc/xxx.conf = 软件的配置文件</p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225160429417.png" alt="image-20211225160429417"></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225155833639.png" alt="image-20211225155833639"></p><p>将nginx 启动文件安装到/usr/bin/nginx 下</p><p>将nginx 配置文件安装到/etc/nginx/ 下</p><p><code>./configure --sbin-path=/usr/bin/nginx --conf-path=/etc/nginx/nginx.conf</code></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225160457547.png" alt="image-20211225160457547"></p><p>编译安装</p><p>安装过程中至结束没有显示错误表示安装成功</p><p><code>make &amp;&amp; make install</code></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225160619191.png" alt="image-20211225160619191"></p><p>启动</p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225160647403.png" alt="image-20211225160647403"></p><p>关闭防火墙测试</p><p>systemctl stop firewalld</p><p>测试是否成功开启服务</p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225160730366.png" alt="image-20211225160730366"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> nginx </tag>
+            
+            <tag> LNMP </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Vim基础</title>
+      <link href="/2021/12/25/Vim%E5%9F%BA%E7%A1%80/"/>
+      <url>/2021/12/25/Vim%E5%9F%BA%E7%A1%80/</url>
+      
+        <content type="html"><![CDATA[<p>Vim基础命令</p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225154521878.png" alt="image-20211225154521878"></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225154532563.png" alt="image-20211225154532563"></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225154547117.png" alt="image-20211225154547117"></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225154618354.png" alt="image-20211225154618354"></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225154627549.png" alt="image-20211225154627549"></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225154634592.png" alt="image-20211225154634592"></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225154715657.png" alt="image-20211225154715657"></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225154727390.png" alt="image-20211225154727390"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 命令 </tag>
+            
+            <tag> Vim </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Linux基础命令</title>
+      <link href="/2021/12/25/Linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/"/>
+      <url>/2021/12/25/Linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/</url>
+      
+        <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225153600700.png" alt="image-20211225153600700"></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225153721923.png" alt="image-20211225153721923"></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225153721923.png"></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225153805828.png" alt="image-20211225153805828"></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225153816344.png" alt="image-20211225153816344"></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225153816344.png"></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225153845073.png" alt="image-20211225153845073"></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225153857001.png" alt="image-20211225153857001"></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225153906435.png" alt="image-20211225153906435"></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225153956501.png" alt="image-20211225153956501"><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225154032287.png" alt="image-20211225154032287"></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225154235670.png" alt="image-20211225154235670"></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225154253661.png" alt="image-20211225154253661"></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225154302395.png" alt="image-20211225154302395"></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225154311528.png" alt="image-20211225154311528"></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225154321188.png" alt="image-20211225154321188"></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225154333980.png" alt="image-20211225154333980"></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225154345404.png" alt="image-20211225154345404"></p><p> 网络类</p><p>​    查看网卡信息</p><p>​    <code>ip addr</code></p><p>​    查看路由信息&amp;默认网关</p><p>​    <code>ip route</code></p><p>​    查看网卡信息（老系统）</p><p>​    <code>ifconfig</code></p><p>​    查看本机开发的TCP和UDP端口</p><p>​    <code>netstat -antlp</code></p><p>​    <code>netstat -anulp</code></p><p>​    （-a:显示所有， -n:不解析服务名称， t:仅显示tcp信息， -u:仅显示udp信息）</p><p>​    查看正在监听的端口</p><p>​    <code>ss -antlp</code>和netstat类似，但是比netstat更快</p><p>​    查看路由跳点（可以看到路由都经过哪些地址最终到达目标地址）</p><p>​    TRACERT （windows：必须大写）</p><p>​    <img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225163324758.png" alt="image-20211225163324758"></p><p>​    查询域名ip地址信息 </p><p>​    <code>nslookup baidu.com</code></p><p>服务类</p><p>​    查看系统进程</p><p>​    <code>ps -aux</code> （通常和kill -9一起使用&amp;最常用法是：ps -ef | grep xxx:查询某个关键字）         a:显示所有程序         u:以用户为主的格式来显示         x:显示所有程序，不以终端机来区分 </p><p>ps看到的是命令执行瞬间的进程信息,而top可以持续的监视 </p><p>ps只是查看进程,而top还可以监视系统性能,如平均负载,cpu和内存的消耗</p><p><code>top</code></p><p>top还可以操作进程,如改变优先级(命令r)和关闭进程(命令k) top主要看cpu,内存使用情况，及占用资源最多的进程由高到低排序，关注点在 于资源占用情况，但是查看内存占用是不准确的</p><p>查看内存： </p><p><code>free -h</code>       自动转换单位(常用)</p><pre><code>     -b         Byte显示</code></pre><p>​        -k          KB显示</p><p>​        -m         MB显示</p><p>​        -g          GB显示</p><p>​        -o         不显示缓冲区 </p><p>​        -t         显示内存总和列</p><p>​        -s         间隔n秒，持续查看 内存总数 已使用总数 空闲内存 多个进程共享的内存</p><p>设置服务</p><p>​    systemctl </p><p>​        restart xxx //重启或这重新加载服务 </p><p>​        start //启动服务 </p><p>​        stop //停止服务，关机或重新启动会失效 </p><p>​        status //查看服务执行信息和有没有开机启动的信息 </p><p>​        enable //设置服务开机启动 </p><p>​        disable //设置服务开机不启动</p><p>结束进程</p><p>​     kill    </p><p>​         -1(HUP) 重载进程</p><p>​        -9(KILL) 杀死一个进程</p><p>​        -15(TERM) 正常停止进程</p><p>显示当前系统信息        </p><p>w</p><p>显示当前登录的用户</p><p>who</p><p>特殊操作 切换和隐藏程序执行窗口，只有主动停止或者关机重启，程序才会停止，有点类似windows的最 小化 在每个screen session 下，所有命令都以 ctrl+a(C-a) 开始 流行的Linux发行版（例如Red Hat Enterprise Linux）通常会自带screen实用程序，如 果没有的话，可以从GNU screen的官方网站下载</p><p><code>yum install -y screen</code></p><p> <code>screen -ls</code>列出所有后台的会话</p><p><code>screen -S name1 vim</code> 给窗口命名</p><p><code>screen -r 窗口号</code>重新打开会话窗口</p><p>后台 control + a + d 切换窗口</p><p><code>screen -rd name1</code>将指定的窗口离线或恢复离线</p><p>后台挂起运行</p><p><code>nohup</code></p><p><code>nohup ping 8.8.8.8 &amp;</code>        //不加 &amp; 的话，关闭窗口会中断执行</p><p>fg 显示后台挂起的程序</p><p>显示目录文件大小</p><p>du 文件名</p><p>显示当前目录下的文件所占用的空间</p><p>du -sh</p><p>查看磁盘被占用的信息</p><p>df</p><p>防火墙(/etc/services)</p><p> <code>ystemctl start firewalld</code> 启动</p><p> <code>systemctl stop firewalld</code> 停止</p><p> <code>firewall-cmd --reload</code> 重新加载防火墙</p><p><code>firewall-camd --state</code> 查看运行状态</p><p><code>firewall-cmd --zone=public --list-ports </code> 显示当前允许通过的端口信息</p><p><code>firewall-cmd --zone=public --list-service</code> 显示当前允许通过的服务</p><p><code>firewall-cmd --zone=public --add-port=80/tcp --permanent</code> 允许哪个端口可以通过</p><p><code>firewall-cmd --zone=public --add-service=http --permanent</code> 允许哪个服务可以通过</p><p><code>firewall-cmd --zone=public --remove-port=http --permanent</code> 删除指定的端口</p><p>开启一个网页端的端口</p><figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python -m SimpleHTTPServer <span class="number">8080</span></span><br></pre></td></tr></tbody></table></figure>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Linux </tag>
+            
+            <tag> 命令 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>centos7配置网卡为静态IP</title>
+      <link href="/2021/12/25/centos7%E9%85%8D%E7%BD%AE%E7%BD%91%E5%8D%A1%E4%B8%BA%E9%9D%99%E6%80%81IP/"/>
+      <url>/2021/12/25/centos7%E9%85%8D%E7%BD%AE%E7%BD%91%E5%8D%A1%E4%B8%BA%E9%9D%99%E6%80%81IP/</url>
+      
+        <content type="html"><![CDATA[<p>1． 打开虚拟机后，桌面右键打开Open Terminal</p><p>2． 使用命令 su 切换到root账户</p><p>3． 用vim编辑器打开网卡配置文件</p><p>4． Vim /etc/sysconfig/network-scripts/ifcfg-ens33</p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225153113536.png" alt="image-20211225153113536"></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225153131923.png" alt="image-20211225153131923"></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225153131923.png"></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225153208160.png" alt="image-20211225153208160"></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225153225002.png" alt="image-20211225153225002"></p><p>5.然后按ESC然后按Shiftt+: 冒号进入命令行模式输入 “wq”保存退出</p><p>6.使用命令重启网卡 systemctl restart network</p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225153250495.png" alt="image-20211225153250495"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> centos7 </tag>
+            
+            <tag> 网卡配置 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>ubuntu安装</title>
+      <link href="/2021/12/25/ubuntu/"/>
+      <url>/2021/12/25/ubuntu/</url>
+      
+        <content type="html"><![CDATA[<h1 id="在虚拟机安装ubuntu系统"><a href="#在虚拟机安装ubuntu系统" class="headerlink" title="在虚拟机安装ubuntu系统"></a>在虚拟机安装ubuntu系统</h1><p>\1.   先到 <a href="https://ubuntu.com/%E4%B8%8B%E8%BD%BD%E9%95%9C%E5%83%8F%E6%96%87%E4%BB%B6">https://ubuntu.com/下载镜像文件</a></p><p>​         <img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225152032412.png" alt="image-20211225152032412"></p><p>​       <img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225152204645.png" alt="image-20211225152204645">        </p><p> \2.   下载完成后启动虚拟机</p><p>​        <img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225152240480.png" alt="image-20211225152240480"></p><p>​        </p><pre><code>     ![image-20211225152255088](https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225152255088.png)     ![image-20211225152320738](https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225152320738.png)</code></pre><p>​        <img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225152342209.png" alt="image-20211225152342209"></p><p>​        <img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225152358941.png" alt="image-20211225152358941"></p><p>​        <img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225152409445.png" alt="image-20211225152409445"></p><p>​        <img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225152422670.png" alt="image-20211225152422670"></p><p>​        <img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225152620102.png" alt="image-20211225152620102"></p><p>​        <img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225152447496.png" alt="image-20211225152447496"></p><p>​        <img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225152637502.png" alt="image-20211225152637502"></p><p>​        <img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225152657553.png" alt="image-20211225152657553"></p><pre><code>   建议安装时，语言选择英文，然后默认“下一步（continue）”即可完成安装</code></pre><p>​        <img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225152727579.png" alt="image-20211225152727579"></p><p>​        安装完成后，重新启动，即可正常使用 </p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 虚拟机 </tag>
+            
+            <tag> ubuntu </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hugo第一次搭建博客</title>
       <link href="/2021/12/23/Hugo/"/>
       <url>/2021/12/23/Hugo/</url>
@@ -14,9 +144,7 @@
       
         <tags>
             
-            <tag> Typora </tag>
-            
-            <tag> Markdown </tag>
+            <tag> Hugo </tag>
             
         </tags>
       
@@ -34,10 +162,6 @@
       
       
         <tags>
-            
-            <tag> Typora </tag>
-            
-            <tag> Markdown </tag>
             
             <tag> 编程随想 </tag>
             
@@ -58,9 +182,7 @@
       
         <tags>
             
-            <tag> Typora </tag>
-            
-            <tag> Markdown </tag>
+            <tag> 生活 </tag>
             
         </tags>
       

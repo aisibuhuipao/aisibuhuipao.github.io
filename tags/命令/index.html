@@ -4,9 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="转载编程随想, Home">
-    <meta name="description" content="博客开张及本博客内容简介很久以前就想开一个博客，可惜一直忙于工作中，不能如愿。拜2008年的全球金融危机所赐，我不再像以前那么忙碌，终于能够抽时间把以前的一些经验和平时的一些心得体会写下来。希望这个博客能够让读者有所收获。
-初步考虑写如下一">
+    <meta name="keywords" content="标签: 命令, Home">
+    <meta name="description" content="Home">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -18,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>转载编程随想 | Home</title>
+    <title>标签: 命令 | Home</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -309,278 +308,312 @@
 
 </header>
 
-    
+    <div class="bg-cover pd-header about-cover">
+    <div class="container">
+    <div class="row">
+    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
+        <div class="brand">
+            <div class="title center-align">
+                
+                Ai si
+                
+            </div>
 
-
-
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/14.jpg')">
-    <div class="container" style="right: 0px;left: 0px;">
-        <div class="row">
-            <div class="col s12 m12 l12">
-                <div class="brand">
-                    <h1 class="description center-align post-title">转载编程随想</h1>
-                </div>
+            <div class="description center-align">
+                
+                <span id="subtitle"></span>
+                <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+                <script>
+                    var typed = new Typed("#subtitle", {
+                        strings: [ 
+                            
+                                "不以物喜，不以己悲。",
+                            
+                                "世上只有一种英雄主义——就是在认清生活的真相之后依然热爱生活 ——罗曼.罗兰 （作家 诺贝尔奖得主）",
+                            
+                                "兴趣是最好的老师.——爱因斯坦",
+                            
+                                "那不能杀死我的，使我更强！What does not kill me，makes me stronger.——尼采 （哲学家 思想家）",
+                            
+                                "人的一切痛苦都是源于对自己无能的愤怒——王小波 （作家）",
+                            
+                                "人生最大的痛苦不是失败，而是没有经历自己想要经历的一切。",
+                            
+                                "人所面对的绝境，在很多情况下都不是生存的绝境，而是【精神】的绝境！",
+                            
+                                "Stay hungry. Stay foolish.——乔布斯引自《全球概览》",
+                            
+                                "非淡薄无以明治，非宁静无以致远。--《淮南子》刘安",
+                            
+                                "面对未知的恐惧，同时保存好奇",
+                            
+                                "善良比聪明重要——聪明是一种天赋，而善良是一种选择。",
+                            
+                                "真正的成熟，应当是独特个性的形成，真实自我的发现，精神上的结果和丰收。——《在世纪的转折点上》尼采 （哲学家 思想家）",
+                            
+                                "如果在撒哈拉沙漠实行【计划经济】，连沙子都会短缺！——路德维希.冯.米塞斯 （经济学家 哲学思想家）",
+                            
+                                "想得到你从未拥有过的东西,就必须做你从未做过的事情.",
+                            
+                                "大多数人宁愿死去也不愿思考,事实上他们也确实到死都没有思考.——罗素 （哲学家 数学家 思想家）",
+                            
+                                "没有人可以回到过去，重新开始；但谁都可以从现在开始，书写一个全然不同的结局！",
+                            
+                                "不要盲目地崇拜任何权威——因为你总能找到相反的权威——罗素 （哲学家 数学家 思想家）",
+                            
+                                "人生中最大的两个财富是：你的【才华】和你的【时间】。才华越来越多而时间越来越少。我们的一生就是用时间来换取才华。",
+                            
+                                "真正的无知【不是】知识的贫乏,而是拒绝获取知识.——波普尔 （哲学家 思想家）",
+                            
+                        ],
+                        startDelay: 300,
+                        typeSpeed: 100,
+                        loop: true,
+                        backSpeed: 50,
+                        showCursor: true
+                    });
+                </script>
+                
             </div>
         </div>
     </div>
 </div>
 
 
+<script>
+    // 每天切换 banner 图.  Switch banner image every day.
+    var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
+    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
+</script>
 
 
-<main class="container content">
+    </div>
+</div>
+
+<main class="content">
 
     
-    <!-- 文章内容详情 -->
-<div id="artDetail">
+
+<div id="tags" class="container chip-container">
     <div class="card">
-        <div class="card-content article-info">
-            <div class="row tag-cate">
-                <div class="col s7">
-                    
-                    <div class="article-tag">
-                        
-                            <a href="/tags/%E7%BC%96%E7%A8%8B%E9%9A%8F%E6%83%B3/">
-                                <span class="chip bg-color">编程随想</span>
-                            </a>
-                        
-                    </div>
-                    
-                </div>
-                <div class="col s5 right-align">
-                    
-                </div>
+        <div class="card-content">
+            <div class="tag-title center-align">
+                <i class="fas fa-tags"></i>&nbsp;&nbsp;文章标签
             </div>
-
-            <div class="post-info">
+            <div class="tag-chips">
                 
-                <div class="post-date info-break-policy">
-                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-12-23
-                </div>
                 
-
+                <a href="/tags/%E7%BC%96%E7%A8%8B%E9%9A%8F%E6%83%B3/" title="编程随想: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="编程随想" style="background-color: #F9EBEA;">编程随想
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
                 
-
                 
-                <div class="info-break-policy">
-                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    297
-                </div>
+                <a href="/tags/Hugo/" title="Hugo: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="Hugo" style="background-color: #F5EEF8;">Hugo
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
                 
-
                 
-
+                <a href="/tags/%E7%94%9F%E6%B4%BB/" title="生活: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="生活" style="background-color: #D5F5E3;">生活
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
                 
-                    <div id="busuanzi_container_page_pv" class="info-break-policy">
-                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
-                        <span id="busuanzi_value_page_pv"></span>
-                    </div>
-				
+                
+                <a href="/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/" title="虚拟机: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="虚拟机" style="background-color: #E8F8F5;">虚拟机
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/ubuntu/" title="ubuntu: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="ubuntu" style="background-color: #FEF9E7;">ubuntu
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/centos7/" title="centos7: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="centos7" style="background-color: #F8F9F9;">centos7
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/%E7%BD%91%E5%8D%A1%E9%85%8D%E7%BD%AE/" title="网卡配置: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="网卡配置" style="background-color: #82E0AA;">网卡配置
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/Linux/" title="Linux: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="Linux" style="background-color: #D7BDE2;">Linux
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/%E5%91%BD%E4%BB%A4/" title="命令: 2">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-active "
+                            data-tagname="命令" style="background-color: #A3E4D7;">命令
+                        <span class="tag-length">2</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/Vim/" title="Vim: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="Vim" style="background-color: #85C1E9;">Vim
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/nginx/" title="nginx: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="nginx" style="background-color: #F8C471;">nginx
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/LAMP/" title="LAMP: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="LAMP" style="background-color: #F9E79F;">LAMP
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/LNMP/" title="LNMP: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="LNMP" style="background-color: #D7BDE2;">LNMP
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/apache/" title="apache: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="apache" style="background-color: #FFF;">apache
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/php/" title="php: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="php" style="background-color: #F9EBEA;">php
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/mysql/" title="mysql: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="mysql" style="background-color: #F8C471;">mysql
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
             </div>
         </div>
-        <hr class="clearfix">
-
-        
-
-        
-
-        <div class="card-content article-card-content">
-            <div id="articleContent">
-                <h1 id="博客开张及本博客内容简介"><a href="#博客开张及本博客内容简介" class="headerlink" title="博客开张及本博客内容简介"></a><a target="_blank" rel="noopener" href="https://program-think.blogspot.com/2009/01/test.html">博客开张及本博客内容简介</a></h1><p>很久以前就想开一个博客，可惜一直忙于工作中，不能如愿。<br>拜2008年的全球金融危机所赐，我不再像以前那么忙碌，终于能够抽时间把以前的一些经验和平时的一些心得体会写下来。<br>希望这个博客能够让读者有所收获。</p>
-<p>初步考虑写如下一些方面的内容：<br>★对于开发人员的个人发展和成长的体会<br>主要介绍一些方法论相关的东东（比如：学习方法、思维方式、做事习惯等），毕竟“<strong>授人以鱼不如授人以渔</strong>”。<br>★关于 C++、Java、Python 语言<br>主要介绍和编程语言相关的开发经验。会比较侧重于开发跨平台，高性能、可扩展性方面的话题。<br>★关于软件工程<br>主要介绍软件工程相关的知识、项目管理的经验、复杂系统的架构设计等。<br>★关于管理<br>主要介绍企业管理相关的经验和职场心得。</p>
-<p>如果有空，我也会顺便八卦一下 IT 业界的新动态。</p>
-
-                
-            </div>
-            <hr/>
-
-            
-
-    <div class="reprint" id="reprint-statement">
-        
     </div>
+</div>
 
-    <script async defer>
-      document.addEventListener("copy", function (e) {
-        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
-        M.toast({html: toastHTML})
-      });
+    
 
-      function navToReprintStatement() {
-        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
-      }
-    </script>
-
-
-
-            <div class="tag_share" style="display: block;">
-                <div class="post-meta__tag-list" style="display: inline-block;">
-                    
-                        <div class="article-tag">
+    <article id="articles" class="container articles">
+        <div class="row tags-posts">
+            
+            
+            <div class="article tag-post col s12 m6 l4" data-tags="命令, Vim" data-aos="fade-up">
+                <div class="card">
+                    <a href="/2021/12/25/Vim%E5%9F%BA%E7%A1%80/">
+                        <div class="card-image tag-image">
                             
-                                <a href="/tags/%E7%BC%96%E7%A8%8B%E9%9A%8F%E6%83%B3/">
-                                    <span class="chip bg-color">编程随想</span>
-                                </a>
                             
+                            <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="Vim基础">
+                            
+                            <span class="card-title">Vim基础</span>
                         </div>
-                    
+                    </a>
+                    <div class="card-content article-content">
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-25
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-user fa-fw"></i>
+                                柒妖
+                                
+                            </span>
+                        </div>
+                    </div>
                 </div>
-                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
-                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
-<div id="article-share">
-
-    
-    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
-    <script src="/libs/share/js/social-share.min.js"></script>
-    
-
-    
-
-</div>
-
+            </div>
+            
+            
+            <div class="article tag-post col s12 m6 l4" data-tags="Linux, 命令" data-aos="fade-up">
+                <div class="card">
+                    <a href="/2021/12/25/Linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/">
+                        <div class="card-image tag-image">
+                            
+                            
+                            <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="Linux基础命令">
+                            
+                            <span class="card-title">Linux基础命令</span>
+                        </div>
+                    </a>
+                    <div class="card-content article-content">
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-25
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-user fa-fw"></i>
+                                柒妖
+                                
+                            </span>
+                        </div>
+                    </div>
                 </div>
             </div>
             
         </div>
-    </div>
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-<article id="prenext-posts" class="prev-next articles">
-    <div class="row article-row">
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
-            <div class="card">
-                <a href="/2021/12/23/Hugo/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="Hugo第一次搭建博客">
-                        
-                        <span class="card-title">Hugo第一次搭建博客</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-12-23
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            柒妖
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/Hugo/">
-                        <span class="chip bg-color">Hugo</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2021/12/20/%E6%9D%AD%E5%B7%9E/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="来到杭州~">
-                        
-                        <span class="card-title">来到杭州~</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-20
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            柒妖
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/%E7%94%9F%E6%B4%BB/">
-                        <span class="chip bg-color">生活</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-    </div>
-</article>
-
-</div>
-
-
-
-<!-- 代码块功能依赖 -->
-<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
-
-<!-- 代码语言 -->
-
-<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
-
-
-<!-- 代码块复制 -->
-
-<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
-
-
-<!-- 代码块收缩 -->
-
-<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
-
-
-    
-
+    </article>
 </main>
 
 
