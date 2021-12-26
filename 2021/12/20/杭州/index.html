@@ -366,7 +366,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    2.2k
+                    3.2k
                 </div>
                 
 
@@ -553,7 +553,7 @@
 </ol>
 </li>
 </ul>
-<h2 id="查看Linux命令在Windows下有无对应命令"><a href="#查看Linux命令在Windows下有无对应命令" class="headerlink" title="查看Linux命令在Windows下有无对应命令"></a>查看Linux命令在Windows下有无对应命令</h2><p>​            </p>
+<h2 id="Linux命令在Windows下对应命令"><a href="#Linux命令在Windows下对应命令" class="headerlink" title="Linux命令在Windows下对应命令"></a>Linux命令在Windows下对应命令</h2><p>​            </p>
 <table>
 <thead>
 <tr>
@@ -623,6 +623,8 @@
 </li>
 <li>usermod【选项】【用户名】    //修改账号<ol>
 <li>【选项】和上面的一样</li>
+<li> usermod -L 【用户名】//锁定账号</li>
+<li> usermod -U【用户名】//解锁账号</li>
 </ol>
 </li>
 <li>userdel【选项】【用户名】    //删除用户<ol>
@@ -673,7 +675,94 @@
 <p>​            usermod -g wheel 【用户名】 //实现提权</p>
 <p>Ubuntu也有类似的组</p>
 <p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211219222056247.png" alt="image-20211219222056247"></p>
-<p>未完~</p>
+<p> 网络类</p>
+<p>​    查看网卡信息</p>
+<p>​    <code>ip addr</code></p>
+<p>​    查看路由信息&amp;默认网关</p>
+<p>​    <code>ip route</code></p>
+<p>​    查看网卡信息（老系统）</p>
+<p>​    <code>ifconfig</code></p>
+<p>​    查看本机开发的TCP和UDP端口</p>
+<p>​    <code>netstat -antlp</code></p>
+<p>​    <code>netstat -anulp</code></p>
+<p>​    （-a:显示所有， -n:不解析服务名称， t:仅显示tcp信息， -u:仅显示udp信息）</p>
+<p>​    查看正在监听的端口</p>
+<p>​    <code>ss -antlp</code>和netstat类似，但是比netstat更快</p>
+<p>​    查看路由跳点（可以看到路由都经过哪些地址最终到达目标地址）</p>
+<p>​    TRACERT （windows：必须大写）</p>
+<p>​    <img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225163324758.png" alt="image-20211225163324758"></p>
+<p>​    查询域名ip地址信息 </p>
+<p>​    <code>nslookup baidu.com</code></p>
+<p>服务类</p>
+<p>​    查看系统进程</p>
+<p>​    <code>ps -aux</code> （通常和kill -9一起使用&amp;最常用法是：ps -ef | grep xxx:查询某个关键字）         a:显示所有程序         u:以用户为主的格式来显示         x:显示所有程序，不以终端机来区分 </p>
+<p>ps看到的是命令执行瞬间的进程信息,而top可以持续的监视 </p>
+<p>ps只是查看进程,而top还可以监视系统性能,如平均负载,cpu和内存的消耗</p>
+<p><code>top</code></p>
+<p>top还可以操作进程,如改变优先级(命令r)和关闭进程(命令k) top主要看cpu,内存使用情况，及占用资源最多的进程由高到低排序，关注点在 于资源占用情况，但是查看内存占用是不准确的</p>
+<p>查看内存： </p>
+<p><code>free -h</code>       自动转换单位(常用)</p>
+<pre><code>     -b         Byte显示
+</code></pre>
+<p>​        -k          KB显示</p>
+<p>​        -m         MB显示</p>
+<p>​        -g          GB显示</p>
+<p>​        -o         不显示缓冲区 </p>
+<p>​        -t         显示内存总和列</p>
+<p>​        -s         间隔n秒，持续查看 内存总数 已使用总数 空闲内存 多个进程共享的内存</p>
+<p>设置服务</p>
+<p>​    systemctl </p>
+<p>​        restart xxx //重启或这重新加载服务 </p>
+<p>​        start //启动服务 </p>
+<p>​        stop //停止服务，关机或重新启动会失效 </p>
+<p>​        status //查看服务执行信息和有没有开机启动的信息 </p>
+<p>​        enable //设置服务开机启动 </p>
+<p>​        disable //设置服务开机不启动</p>
+<p>结束进程</p>
+<p>​     kill    </p>
+<p>​         -1(HUP) 重载进程</p>
+<p>​        -9(KILL) 杀死一个进程</p>
+<p>​        -15(TERM) 正常停止进程</p>
+<p>显示当前系统信息        </p>
+<p>w</p>
+<p>显示当前登录的用户</p>
+<p>who</p>
+<p>特殊操作 切换和隐藏程序执行窗口，只有主动停止或者关机重启，程序才会停止，有点类似windows的最 小化 在每个screen session 下，所有命令都以 ctrl+a(C-a) 开始 流行的Linux发行版（例如Red Hat Enterprise Linux）通常会自带screen实用程序，如 果没有的话，可以从GNU screen的官方网站下载</p>
+<p><code>yum install -y screen</code></p>
+<p> <code>screen -ls</code>列出所有后台的会话</p>
+<p><code>screen -S name1 vim</code> 给窗口命名</p>
+<p><code>screen -r 窗口号</code>重新打开会话窗口</p>
+<p>后台 control + a + d 切换窗口</p>
+<p><code>screen -rd name1</code>将指定的窗口离线或恢复离线</p>
+<p>后台挂起运行</p>
+<p><code>nohup</code></p>
+<p><code>nohup ping 8.8.8.8 &amp;</code>        //不加 &amp; 的话，关闭窗口会中断执行</p>
+<p>fg 显示后台挂起的程序</p>
+<p>显示目录文件大小</p>
+<p>du 文件名</p>
+<p>显示当前目录下的文件所占用的空间</p>
+<p>du -sh</p>
+<p>查看磁盘被占用的信息</p>
+<p>df</p>
+<p>防火墙(/etc/services)</p>
+<p> <code>ystemctl start firewalld</code> 启动</p>
+<p> <code>systemctl stop firewalld</code> 停止</p>
+<p> <code>firewall-cmd --reload</code> 重新加载防火墙</p>
+<p> <code>firewall-camd --state</code> 查看运行状态</p>
+<p> <code>firewall-cmd --zone=public --list-ports </code> 显示当前允许通过的端口信息</p>
+<p> <code>firewall-cmd --zone=public --list-service</code> 显示当前允许通过的服务</p>
+<p> <code>firewall-cmd --zone=public --add-port=80/tcp --permanent</code> 允许哪个端口可以通过</p>
+<p> <code>firewall-cmd --zone=public --add-service=http --permanent</code> 允许哪个服务可以通过</p>
+<p> <code>firewall-cmd --zone=public --remove-port=http --permanent</code> 删除指定的端口</p>
+<p>开启一个网页端的端口</p>
+<figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python -m SimpleHTTPServer <span class="number">8080</span></span><br></pre></td></tr></tbody></table></figure>
+
+
+
+<p>最后，学习了 LAMP 和 Nginx 的搭建，在我的另外两篇博文里面</p>
+<p><a href="http://aisibuhuipao.github.io/2021/12/25/LAMP%E6%90%AD%E5%BB%BA/">LAMP</a></p>
+<p><a href="http://aisibuhuipao.github.io/2021/12/25/%E6%BA%90%E7%A0%81%E5%AE%89%E8%A3%85nginx/">Nginx</a> 当然，这个Nginx 服务也可以用<code>yum install -y nginx</code>来安装，更方便一点。</p>
+<p>emmmmmm………嗯。</p>
 
                 
             </div>
@@ -789,7 +878,7 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/12/23/test/">
+                <a href="/2021/12/23/%E8%BD%AC%E8%BD%BD%E7%BC%96%E7%A8%8B%E9%9A%8F%E6%83%B3/">
                     <div class="card-image">
                         
                         
@@ -976,7 +1065,7 @@
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">4.7k</span>
+                        class="white-color">9.4k</span>
             
             
             
