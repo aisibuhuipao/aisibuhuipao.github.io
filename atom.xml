@@ -6,7 +6,7 @@
   <link href="http://aisibuhuipao.github.io/atom.xml" rel="self"/>
   
   <link href="http://aisibuhuipao.github.io/"/>
-  <updated>2021-12-25T14:48:18.000Z</updated>
+  <updated>2021-12-27T01:09:37.000Z</updated>
   <id>http://aisibuhuipao.github.io/</id>
   
   <author>
@@ -15,6 +15,59 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>win-dos-思维脑图</title>
+    <link href="http://aisibuhuipao.github.io/2021/12/27/win-dos-%E6%80%9D%E7%BB%B4%E8%84%91%E5%9B%BE/"/>
+    <id>http://aisibuhuipao.github.io/2021/12/27/win-dos-%E6%80%9D%E7%BB%B4%E8%84%91%E5%9B%BE/</id>
+    <published>2021-12-27T01:09:37.000Z</published>
+    <updated>2021-12-27T01:09:37.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/win%20dos%20%E6%80%9D%E7%BB%B4%E8%84%91%E5%9B%BE.png" alt="win dos 思维脑图"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/aisibuhuipao/img/main/win%20dos%20%E6%80%9D%E7%BB%B4%E8%84%91%E5%9B%BE.png&quot; alt=&quot;win dos 思维脑图</summary>
+      
+    
+    
+    
+    
+    <category term="思维脑图" scheme="http://aisibuhuipao.github.io/tags/%E6%80%9D%E7%BB%B4%E8%84%91%E5%9B%BE/"/>
+    
+    <category term="windows" scheme="http://aisibuhuipao.github.io/tags/windows/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>HTML，Js和CSS</title>
+    <link href="http://aisibuhuipao.github.io/2021/12/26/HTML%EF%BC%8CJs%E5%92%8CCSS/"/>
+    <id>http://aisibuhuipao.github.io/2021/12/26/HTML%EF%BC%8CJs%E5%92%8CCSS/</id>
+    <published>2021-12-26T04:06:51.000Z</published>
+    <updated>2021-12-26T04:06:51.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>  一、HTML 超文本标记语言（Hyper Text Markup Language）</p><p>​            HTML是标记语言，不是编程语言</p><p>​                工具自动生成</p><p>​            <img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211226121618835.png" alt="image-20211226121618835"></p><p>​        <img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211226121847653.png" alt="image-20211226121847653"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;  一、HTML 超文本标记语言（Hyper Text Markup Language）&lt;/p&gt;
+&lt;p&gt;​            HTML是标记语言，不是编程语言&lt;/p&gt;
+&lt;p&gt;​                工具自动生成&lt;/p&gt;
+&lt;p&gt;​            &lt;img</summary>
+      
+    
+    
+    
+    
+    <category term="HTML" scheme="http://aisibuhuipao.github.io/tags/HTML/"/>
+    
+    <category term="JavaScript" scheme="http://aisibuhuipao.github.io/tags/JavaScript/"/>
+    
+    <category term="CSS" scheme="http://aisibuhuipao.github.io/tags/CSS/"/>
+    
+  </entry>
   
   <entry>
     <title>TCP握手与挥手</title>
@@ -134,9 +187,9 @@
     
     
     
-    <category term="数据库" scheme="http://aisibuhuipao.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
-    
     <category term="windows" scheme="http://aisibuhuipao.github.io/tags/windows/"/>
+    
+    <category term="数据库" scheme="http://aisibuhuipao.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
   </entry>
   
@@ -147,16 +200,14 @@
     <published>2021-12-25T13:51:40.000Z</published>
     <updated>2021-12-25T13:51:40.000Z</updated>
     
-    <content type="html"><![CDATA[<p>实验要求：要求以下全部使用标准ACL实现</p><p>​     1.要求10网段禁止访问整个50网段，访问其他不受限制</p><p>2.要求10.1.1.1禁止访问40网段，其他不受影响</p><p>3.要求40.1.1.1禁止访问50网段，其他不受影响</p><p>拓补图</p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/clip_image002.jpg" alt="img"></p><p>配置</p><p>PC0：ip 192.168.10.10/24 192.168.10.1</p><p>PC1：ip 192.168.10.20/24 192.168.10.1</p><p>PC2：ip 192.168.50.10/24 192.168.50.1</p><p>PC3：ip 192.168.50.20/24 192.168.50.1</p><p>PC4：ip 192.168.40.20/24 192.168.40.1</p><p>PC5：ip 192.168.40.10/24 192.168.40.1</p><p>R1:</p><p>R1&gt;：enable</p><p>​    configure terminal</p><p>​    hostname R1</p><p>​    intface g0/0</p><p>​    ip address 192.168.10.1 255.255.255.0</p><p>​    no shutdown</p><p>​    exit</p><p>​    intface g0/1</p><p>​    ip address 192.168.20.10 255.255.255.0</p><p>​    no shutdown</p><p>​    exit</p><p>​    ip route 0.0.0.0 0.0.0.0 192.168.20.20</p><p>​    exit</p><p>R3:</p><p>​    R3&gt;：enable</p><p>​    configure terminal</p><p>​    hostname R3</p><p>​    intface g0/1</p><p>​    ip address 192.168.40.1 255.255.255.0</p><p>​    no shutdown</p><p>​    exit</p><p>​    intface g0/0</p><p>​    ip address 192.168.30.20 255.255.255.0</p><p>​    no shutdown</p><p>​    exit</p><p>​    ip route 0.0.0.0 0.0.0.0 192.168.30.10</p><p>​    exit</p><p>R2：</p><p>​    R2&gt;：enable</p><p>​    configure terminal</p><p>​    hostname R2</p><p>​    intface g0/0</p><p>​    ip address 192.168.20.20 255.255.255.0</p><p>​    no shutdown</p><p>​    exit</p><p>​    intface g0/1</p><p>​    ip address 192.168.30.10 255.255.255.0</p><p>​    no shutdown</p><p>​    intface g0/2</p><p>​    ip address 192.168.50.1 255.255.255.0</p><p>​    no shutdown</p><p>exit</p><p>​    ip route 192.168.10.0 255.255.255.0 192.168.20.10</p><p>​    ip route 192.168.40.0 255.255.255.0 192.168.30.20</p><p>​    exit</p><p>全通之后建立ACL表禁止</p><p>​    R1：configure terminal</p><p>​       access-list 10 deny 192.168.0.0 0.0.255.255</p><p>​       intface g0/0</p><p>​       ip access-group 10 in</p><p>​    R3：configure terminal</p><p>​       access-list 10 deny 192.168.0.0 0.0.255.255</p><p>​       interface g0/1</p><p>​       ip access-group 10 in</p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/clip_image004.jpg" alt="img"></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/clip_image006.jpg" alt="img"></p>]]></content>
+    <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/IMG_0939.JPG" alt="IMG_0939"></p><p>实验要求：要求以下全部使用标准ACL实现</p><p>​     1.要求10网段禁止访问整个50网段，访问其他不受限制</p><p>​     2.要求10.1.1.1禁止访问40网段，其他不受影响</p><p>​     3.要求40.1.1.1禁止访问50网段，其他不受影响</p><p>拓补图</p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/clip_image002.jpg" alt="img"></p><p>配置</p><p>PC0：ip 192.168.10.10/24 192.168.10.1</p><p>PC1：ip 192.168.10.20/24 192.168.10.1</p><p>PC2：ip 192.168.50.10/24 192.168.50.1</p><p>PC3：ip 192.168.50.20/24 192.168.50.1</p><p>PC4：ip 192.168.40.20/24 192.168.40.1</p><p>PC5：ip 192.168.40.10/24 192.168.40.1</p><p>R1:</p><p>R1&gt;：enable</p><p>​    configure terminal</p><p>​    hostname R1</p><p>​    intface g0/0</p><p>​    ip address 192.168.10.1 255.255.255.0</p><p>​    no shutdown</p><p>​    exit</p><p>​    intface g0/1</p><p>​    ip address 192.168.20.10 255.255.255.0</p><p>​    no shutdown</p><p>​    exit</p><p>​    ip route 0.0.0.0 0.0.0.0 192.168.20.20</p><p>​    exit</p><p>R3:</p><p>​    R3&gt;：enable</p><p>​    configure terminal</p><p>​    hostname R3</p><p>​    intface g0/1</p><p>​    ip address 192.168.40.1 255.255.255.0</p><p>​    no shutdown</p><p>​    exit</p><p>​    intface g0/0</p><p>​    ip address 192.168.30.20 255.255.255.0</p><p>​    no shutdown</p><p>​    exit</p><p>​    ip route 0.0.0.0 0.0.0.0 192.168.30.10</p><p>​    exit</p><p>R2：</p><p>​    R2&gt;：enable</p><p>​    configure terminal</p><p>​    hostname R2</p><p>​    intface g0/0</p><p>​    ip address 192.168.20.20 255.255.255.0</p><p>​    no shutdown</p><p>​    exit</p><p>​    intface g0/1</p><p>​    ip address 192.168.30.10 255.255.255.0</p><p>​    no shutdown</p><p>​    intface g0/2</p><p>​    ip address 192.168.50.1 255.255.255.0</p><p>​    no shutdown</p><p>exit</p><p>​    ip route 192.168.10.0 255.255.255.0 192.168.20.10</p><p>​    ip route 192.168.40.0 255.255.255.0 192.168.30.20</p><p>​    exit</p><p>全通之后建立ACL表禁止</p><p>​    R1：configure terminal</p><p>​       access-list 10 deny 192.168.0.0 0.0.255.255</p><p>​       intface g0/0</p><p>​       ip access-group 10 in</p><p>​    R3：configure terminal</p><p>​       access-list 10 deny 192.168.0.0 0.0.255.255</p><p>​       interface g0/1</p><p>​       ip access-group 10 in</p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/clip_image004.jpg" alt="img"></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/clip_image006.jpg" alt="img"></p>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;实验要求：要求以下全部使用标准ACL实现&lt;/p&gt;
-&lt;p&gt;​     1.要求10网段禁止访问整个50网段，访问其他不受限制&lt;/p&gt;
-&lt;p&gt;2.要求10.1.1.1禁止访问40网段，其他不受影响&lt;/p&gt;
-&lt;p&gt;3.要求40.1.1.1禁止访问50网段，其他不受影响&lt;/p&gt;
-&lt;</summary>
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/aisibuhuipao/img/main/IMG_0939.JPG&quot; alt=&quot;IMG_0939&quot;&gt;&lt;/p&gt;
+&lt;p&gt;实验要求：要求以下全部使用标准ACL实现&lt;/p&gt;
+&lt;p&gt;​     </summary>
       
     
     
@@ -278,13 +329,13 @@
     <published>2021-12-25T07:34:45.000Z</published>
     <updated>2021-12-25T07:34:45.000Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225153600700.png" alt="image-20211225153600700"></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225153721923.png" alt="image-20211225153721923"></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225153721923.png"></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225153805828.png" alt="image-20211225153805828"></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225153816344.png" alt="image-20211225153816344"></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225153816344.png"></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225153845073.png" alt="image-20211225153845073"></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225153857001.png" alt="image-20211225153857001"></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225153906435.png" alt="image-20211225153906435"></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225153956501.png" alt="image-20211225153956501"><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225154032287.png" alt="image-20211225154032287"></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225154235670.png" alt="image-20211225154235670"></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225154253661.png" alt="image-20211225154253661"></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225154302395.png" alt="image-20211225154302395"></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225154311528.png" alt="image-20211225154311528"></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225154321188.png" alt="image-20211225154321188"></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225154333980.png" alt="image-20211225154333980"></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225154345404.png" alt="image-20211225154345404"></p><p> 网络类</p><p>​    查看网卡信息</p><p>​    <code>ip addr</code></p><p>​    查看路由信息&amp;默认网关</p><p>​    <code>ip route</code></p><p>​    查看网卡信息（老系统）</p><p>​    <code>ifconfig</code></p><p>​    查看本机开发的TCP和UDP端口</p><p>​    <code>netstat -antlp</code></p><p>​    <code>netstat -anulp</code></p><p>​    （-a:显示所有， -n:不解析服务名称， t:仅显示tcp信息， -u:仅显示udp信息）</p><p>​    查看正在监听的端口</p><p>​    <code>ss -antlp</code>和netstat类似，但是比netstat更快</p><p>​    查看路由跳点（可以看到路由都经过哪些地址最终到达目标地址）</p><p>​    TRACERT （windows：必须大写）</p><p>​    <img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225163324758.png" alt="image-20211225163324758"></p><p>​    查询域名ip地址信息 </p><p>​    <code>nslookup baidu.com</code></p><p>服务类</p><p>​    查看系统进程</p><p>​    <code>ps -aux</code> （通常和kill -9一起使用&amp;最常用法是：ps -ef | grep xxx:查询某个关键字）         a:显示所有程序         u:以用户为主的格式来显示         x:显示所有程序，不以终端机来区分 </p><p>ps看到的是命令执行瞬间的进程信息,而top可以持续的监视 </p><p>ps只是查看进程,而top还可以监视系统性能,如平均负载,cpu和内存的消耗</p><p><code>top</code></p><p>top还可以操作进程,如改变优先级(命令r)和关闭进程(命令k) top主要看cpu,内存使用情况，及占用资源最多的进程由高到低排序，关注点在 于资源占用情况，但是查看内存占用是不准确的</p><p>查看内存： </p><p><code>free -h</code>       自动转换单位(常用)</p><pre><code>     -b         Byte显示</code></pre><p>​        -k          KB显示</p><p>​        -m         MB显示</p><p>​        -g          GB显示</p><p>​        -o         不显示缓冲区 </p><p>​        -t         显示内存总和列</p><p>​        -s         间隔n秒，持续查看 内存总数 已使用总数 空闲内存 多个进程共享的内存</p><p>设置服务</p><p>​    systemctl </p><p>​        restart xxx //重启或这重新加载服务 </p><p>​        start //启动服务 </p><p>​        stop //停止服务，关机或重新启动会失效 </p><p>​        status //查看服务执行信息和有没有开机启动的信息 </p><p>​        enable //设置服务开机启动 </p><p>​        disable //设置服务开机不启动</p><p>结束进程</p><p>​     kill    </p><p>​         -1(HUP) 重载进程</p><p>​        -9(KILL) 杀死一个进程</p><p>​        -15(TERM) 正常停止进程</p><p>显示当前系统信息        </p><p>w</p><p>显示当前登录的用户</p><p>who</p><p>特殊操作 切换和隐藏程序执行窗口，只有主动停止或者关机重启，程序才会停止，有点类似windows的最 小化 在每个screen session 下，所有命令都以 ctrl+a(C-a) 开始 流行的Linux发行版（例如Red Hat Enterprise Linux）通常会自带screen实用程序，如 果没有的话，可以从GNU screen的官方网站下载</p><p><code>yum install -y screen</code></p><p> <code>screen -ls</code>列出所有后台的会话</p><p><code>screen -S name1 vim</code> 给窗口命名</p><p><code>screen -r 窗口号</code>重新打开会话窗口</p><p>后台 control + a + d 切换窗口</p><p><code>screen -rd name1</code>将指定的窗口离线或恢复离线</p><p>后台挂起运行</p><p><code>nohup</code></p><p><code>nohup ping 8.8.8.8 &amp;</code>        //不加 &amp; 的话，关闭窗口会中断执行</p><p>fg 显示后台挂起的程序</p><p>显示目录文件大小</p><p>du 文件名</p><p>显示当前目录下的文件所占用的空间</p><p>du -sh</p><p>查看磁盘被占用的信息</p><p>df</p><p>防火墙(/etc/services)</p><p> <code>ystemctl start firewalld</code> 启动</p><p> <code>systemctl stop firewalld</code> 停止</p><p> <code>firewall-cmd --reload</code> 重新加载防火墙</p><p><code>firewall-camd --state</code> 查看运行状态</p><p><code>firewall-cmd --zone=public --list-ports </code> 显示当前允许通过的端口信息</p><p><code>firewall-cmd --zone=public --list-service</code> 显示当前允许通过的服务</p><p><code>firewall-cmd --zone=public --add-port=80/tcp --permanent</code> 允许哪个端口可以通过</p><p><code>firewall-cmd --zone=public --add-service=http --permanent</code> 允许哪个服务可以通过</p><p><code>firewall-cmd --zone=public --remove-port=http --permanent</code> 删除指定的端口</p><p>开启一个网页端的端口</p><figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python -m SimpleHTTPServer <span class="number">8080</span></span><br></pre></td></tr></tbody></table></figure>]]></content>
+    <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/IMG_1773.JPG" alt="IMG_1773"></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225153600700.png" alt="image-20211225153600700"></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225153721923.png" alt="image-20211225153721923"></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225153721923.png"></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225153805828.png" alt="image-20211225153805828"></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225153816344.png" alt="image-20211225153816344"></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225153816344.png"></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225153845073.png" alt="image-20211225153845073"></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225153857001.png" alt="image-20211225153857001"></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225153906435.png" alt="image-20211225153906435"></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225153956501.png" alt="image-20211225153956501"><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225154032287.png" alt="image-20211225154032287"></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225154235670.png" alt="image-20211225154235670"></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225154253661.png" alt="image-20211225154253661"></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225154302395.png" alt="image-20211225154302395"></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225154311528.png" alt="image-20211225154311528"></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225154321188.png" alt="image-20211225154321188"></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225154333980.png" alt="image-20211225154333980"></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225154345404.png" alt="image-20211225154345404"></p><p> 网络类</p><p>​    查看网卡信息</p><p>​    <code>ip addr</code></p><p>​    查看路由信息&amp;默认网关</p><p>​    <code>ip route</code></p><p>​    查看网卡信息（老系统）</p><p>​    <code>ifconfig</code></p><p>​    查看本机开发的TCP和UDP端口</p><p>​    <code>netstat -antlp</code></p><p>​    <code>netstat -anulp</code></p><p>​    （-a:显示所有， -n:不解析服务名称， t:仅显示tcp信息， -u:仅显示udp信息）</p><p>​    查看正在监听的端口</p><p>​    <code>ss -antlp</code>和netstat类似，但是比netstat更快</p><p>​    查看路由跳点（可以看到路由都经过哪些地址最终到达目标地址）</p><p>​    TRACERT （windows：必须大写）</p><p>​    <img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225163324758.png" alt="image-20211225163324758"></p><p>​    查询域名ip地址信息 </p><p>​    <code>nslookup baidu.com</code></p><p>服务类</p><p>​    查看系统进程</p><p>​    <code>ps -aux</code> （通常和kill -9一起使用&amp;最常用法是：ps -ef | grep xxx:查询某个关键字）         a:显示所有程序         u:以用户为主的格式来显示         x:显示所有程序，不以终端机来区分 </p><p>ps看到的是命令执行瞬间的进程信息,而top可以持续的监视 </p><p>ps只是查看进程,而top还可以监视系统性能,如平均负载,cpu和内存的消耗</p><p><code>top</code></p><p>top还可以操作进程,如改变优先级(命令r)和关闭进程(命令k) top主要看cpu,内存使用情况，及占用资源最多的进程由高到低排序，关注点在 于资源占用情况，但是查看内存占用是不准确的</p><p>查看内存： </p><p><code>free -h</code>       自动转换单位(常用)</p><pre><code>     -b         Byte显示</code></pre><p>​        -k          KB显示</p><p>​        -m         MB显示</p><p>​        -g          GB显示</p><p>​        -o         不显示缓冲区 </p><p>​        -t         显示内存总和列</p><p>​        -s         间隔n秒，持续查看 内存总数 已使用总数 空闲内存 多个进程共享的内存</p><p>设置服务</p><p>​    systemctl </p><p>​        restart xxx //重启或这重新加载服务 </p><p>​        start //启动服务 </p><p>​        stop //停止服务，关机或重新启动会失效 </p><p>​        status //查看服务执行信息和有没有开机启动的信息 </p><p>​        enable //设置服务开机启动 </p><p>​        disable //设置服务开机不启动</p><p>结束进程</p><p>​     kill    </p><p>​         -1(HUP) 重载进程</p><p>​        -9(KILL) 杀死一个进程</p><p>​        -15(TERM) 正常停止进程</p><p>显示当前系统信息        </p><p>w</p><p>显示当前登录的用户</p><p>who</p><p>特殊操作 切换和隐藏程序执行窗口，只有主动停止或者关机重启，程序才会停止，有点类似windows的最 小化 在每个screen session 下，所有命令都以 ctrl+a(C-a) 开始 流行的Linux发行版（例如Red Hat Enterprise Linux）通常会自带screen实用程序，如 果没有的话，可以从GNU screen的官方网站下载</p><p><code>yum install -y screen</code></p><p> <code>screen -ls</code>列出所有后台的会话</p><p><code>screen -S name1 vim</code> 给窗口命名</p><p><code>screen -r 窗口号</code>重新打开会话窗口</p><p>后台 control + a + d 切换窗口</p><p><code>screen -rd name1</code>将指定的窗口离线或恢复离线</p><p>后台挂起运行</p><p><code>nohup</code></p><p><code>nohup ping 8.8.8.8 &amp;</code>        //不加 &amp; 的话，关闭窗口会中断执行</p><p>fg 显示后台挂起的程序</p><p>显示目录文件大小</p><p>du 文件名</p><p>显示当前目录下的文件所占用的空间</p><p>du -sh</p><p>查看磁盘被占用的信息</p><p>df</p><p>防火墙(/etc/services)</p><p> <code>ystemctl start firewalld</code> 启动</p><p> <code>systemctl stop firewalld</code> 停止</p><p> <code>firewall-cmd --reload</code> 重新加载防火墙</p><p><code>firewall-camd --state</code> 查看运行状态</p><p><code>firewall-cmd --zone=public --list-ports </code> 显示当前允许通过的端口信息</p><p><code>firewall-cmd --zone=public --list-service</code> 显示当前允许通过的服务</p><p><code>firewall-cmd --zone=public --add-port=80/tcp --permanent</code> 允许哪个端口可以通过</p><p><code>firewall-cmd --zone=public --add-service=http --permanent</code> 允许哪个服务可以通过</p><p><code>firewall-cmd --zone=public --remove-port=http --permanent</code> 删除指定的端口</p><p>开启一个网页端的端口</p><figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python -m SimpleHTTPServer <span class="number">8080</span></span><br></pre></td></tr></tbody></table></figure>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211225153600700.png&quot; alt=&quot;image-20211225153600700&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img</summary>
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/aisibuhuipao/img/main/IMG_1773.JPG&quot; alt=&quot;IMG_1773&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubuserco</summary>
       
     
     
