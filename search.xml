@@ -443,11 +443,11 @@
       
         <tags>
             
-            <tag> javascript </tag>
+            <tag> Vulnhub靶机 </tag>
             
-            <tag> 水仙花数 </tag>
+            <tag> 注入 </tag>
             
-            <tag> 九九乘法表 </tag>
+            <tag> 渗透 </tag>
             
         </tags>
       
@@ -468,13 +468,7 @@
             
             <tag> mysql </tag>
             
-            <tag> sqlserver </tag>
-            
-            <tag> access </tag>
-            
-            <tag> oracle </tag>
-            
-            <tag> mongodb </tag>
+            <tag> 绕WAF </tag>
             
         </tags>
       
