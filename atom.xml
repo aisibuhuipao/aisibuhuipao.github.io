@@ -83,29 +83,6 @@
   </entry>
   
   <entry>
-    <title>linux常用命令</title>
-    <link href="http://aisibuhuipao.github.io/2022/01/04/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
-    <id>http://aisibuhuipao.github.io/2022/01/04/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</id>
-    <published>2022-01-04T11:45:38.000Z</published>
-    <updated>2022-01-04T11:45:38.000Z</updated>
-    
-    <content type="html"><![CDATA[<p> 转载 by <a href="https://github.com/rd2coding/Road2Coding">CodeSheep</a></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/1.jpg" alt="1"></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/2.jpg" alt="2"></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/3.jpg" alt="3"></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/4.jpg" alt="4"></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/5.jpg" alt="5"></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/6.jpg" alt="6"></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/7.jpg" alt="7"></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/8.jpg" alt="8"></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/9.jpg" alt="9"></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/10.jpg" alt="10"></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/11.jpg" alt="11"></p><p><img src="../../../img/13.jpg" alt="12"></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/12-16412969959801.jpg" alt="12"></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt; 转载 by &lt;a href=&quot;https://github.com/rd2coding/Road2Coding&quot;&gt;CodeSheep&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/aisibuhuipao/i</summary>
-      
-    
-    
-    
-    
-    <category term="linux" scheme="http://aisibuhuipao.github.io/tags/linux/"/>
-    
-  </entry>
-  
-  <entry>
     <title>水仙花数-九九乘法表</title>
     <link href="http://aisibuhuipao.github.io/2021/12/31/%E6%B0%B4%E4%BB%99%E8%8A%B1%E6%95%B0/"/>
     <id>http://aisibuhuipao.github.io/2021/12/31/%E6%B0%B4%E4%BB%99%E8%8A%B1%E6%95%B0/</id>
@@ -511,6 +488,32 @@
     <category term="虚拟机" scheme="http://aisibuhuipao.github.io/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/"/>
     
     <category term="ubuntu" scheme="http://aisibuhuipao.github.io/tags/ubuntu/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hugo第一次搭建博客</title>
+    <link href="http://aisibuhuipao.github.io/2021/12/23/Hugo/"/>
+    <id>http://aisibuhuipao.github.io/2021/12/23/Hugo/</id>
+    <published>2021-12-23T10:10:01.461Z</published>
+    <updated>2022-04-10T15:56:22.167Z</updated>
+    
+    <content type="html"><![CDATA[<p>一.环境安装</p><p>​    1. go语言</p><p>​    2. git</p><p>二.安装Hugo</p><p>​    1.到<a href="https://github.com/spf13/hugo/releases">Hugo Releases</a> 下载对应的操作系统版本的Hugo二进制文件</p><p>​    <img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211219103422194.png" alt="image-20211219103422194"></p><p>​    2.将下载的压缩包解压到任意盘符的根目录下</p><p>​        2.1创建Hugo文件夹</p><p>​            1.创建一个新的文件夹,D:\Hugo</p><p>​            2.创建一个新的文件夹,D:\Hugo\bin</p><p>​            3.创建一个新的文件夹,D:\Hugo\myblog        </p><p>​        我是在D:盘目录下新建了一个Hugo的文件夹,解压到这个文件夹下</p><p>​    <img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211219094839939.png"></p><p>​    3.设置环境变量</p><p>​        3.1把Hugo添加到path中，我的电脑（此电脑）右键属性，在高级里面，选择环境变量</p><p>​        <img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211219103924062.png" alt="image-20211219103924062"></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211219104008570.png" alt="image-20211219104008570"></p><p>​        下面系统变量同上</p><p>​    4.部署Hugo</p><p>​        4.1验证Hugo的环境变量是否正确，打开CMD窗口（windows+r,输入cmd）运行 Hugo version</p><p>​        <img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211219104402077.png" alt="image-20211219104402077"></p><p>​        4.2新生成一个博客站点（文件夹）红框里面的名字可以随意更改</p><p>​        <img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211219105053824.png" alt="image-20211219105053824"></p><p>​        4.3这个myblog就是博客的根目录了</p><p>​        <img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211219105331540.png" alt="image-20211219105331540"></p><p>5.给博客设置一个<a href="https://themes.gohugo.io/">主题</a></p><p>​        <img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211219110020648.png" alt="image-20211219110020648"></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211219110504744.png" alt="image-20211219110504744"></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211219110541084.png" alt="image-20211219110541084">        </p><p>可以使用 git clone 下载，也可以点击下面的 Download ZIP 下载，解压到博客的主题目录下</p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211219110859540.png" alt="image-20211219110859540"></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211219111141465.png" alt="image-20211219111141465"></p><p>​        5.1 启动博客站点</p><p>​        在博客的根目下运行 m10c 是主题的 文件夹 名字</p><p>​        <code>hugo server -t m10c --buildDrafts</code></p><p>​        <img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211219111623813.png" alt="image-20211219111623813"></p><p>​        5.3看见 <a href="http://localhsot:1313/">http://localhsot:1313/</a> 表示启动成功，输入到浏览器打开看看</p><p>​        <img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211219111836541.png" alt="image-20211219111836541"></p><p>​        5.2在博客根目录下新建一篇文章</p><p>​        <img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211219112523887.png" alt="image-20211219112523887"></p><p>​        ps:以.md结尾</p><p>​        <img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211219112653753.png" alt="image-20211219112653753"></p><p>​    双击打开编辑或者右键指定记事本打开都可以，可以随意写点内容测试一下</p><p>​    <img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211219113240436.png" alt="image-20211219113240436"></p><p>​    回到博客根目录下 打上面的启动命令 看看</p><p>​    <img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211219113340282.png" alt="image-20211219113340282"></p><p>​        <img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211219113358218.png" alt="image-20211219113358218"></p><p>​    ok.</p><p>三.部署到Github Page上</p><p>​    1.到<a href="github.com">Github</a>上注册一个账号，</p><p>​    2.新建一个仓库</p><p>​    <img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211219114031785.png" alt="image-20211219114031785"></p><p>​    <img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211219114704106.png" alt="image-20211219114704106"></p><p>​    Repository     name:的名字必须全小写且和你的昵称一样，然后点击下面绿色的创建</p><p>​    <img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211219114952664.png" alt="image-20211219114952664"></p><p>此时是一个空的仓库</p><p>​    3.接下来把自己的博客部署到github上来</p><p>​    <img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211219115733638.png" alt="image-20211219115733638"></p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211219115822346.png" alt="image-20211219115822346"></p><p>博客的根目录下会生成一个 public  的文件夹，这个文件夹里面的文件就是自己博客的内容</p><ol start="4"><li><p>接下来把 public 这个文件夹传到自己 git 仓库，博客就可以在远程访问了</p><p> 先进入到 public 这个文件夹中</p><p> <img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211219120241839.png" alt="image-20211219120241839"></p><p> 然后 <code>git init</code> 进行初始化</p><p> <img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211219120337995.png" alt="image-20211219120337995"></p></li></ol><p>​      把所有文件加进去</p><p>​      <code>git add *</code></p><p>​    <img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211219120510949.png" alt="image-20211219120510949"></p><p>​    然后提交</p><p>​    <code>git commit -m "随便起名字"</code></p><p>​    <img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211219120807383.png" alt="image-20211219120807383"></p><p>​    5.GitHub关联本地的文件</p><p>​        <code>git remote add origin xxxxx.git</code></p><p>​        <img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211219123322136.png" alt="image-20211219123322136"></p><p>​    推到git 仓库上面去</p><p>​    <code>git push -u origin master</code></p><p>​    <img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211219124542741.png" alt="image-20211219124542741"></p><p>6.到自己的仓库看了一下有没有推成功，有文件表示成功</p><p><img src="https://raw.githubusercontent.com/aisibuhuipao/img/main/image-20211219124650041.png" alt="image-20211219124650041"><a href="https://hexo.io/docs/one-command-deployment.html">https://hexo.io/docs/one-command-deployment.html</a>)</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;一.环境安装&lt;/p&gt;
+&lt;p&gt;​    1. go语言&lt;/p&gt;
+&lt;p&gt;​    2. git&lt;/p&gt;
+&lt;p&gt;二.安装Hugo&lt;/p&gt;
+&lt;p&gt;​    1.到&lt;a href=&quot;https://github.com/spf13/hugo/releases&quot;&gt;Hugo Releas</summary>
+      
+    
+    
+    
+    
+    <category term="Hugo" scheme="http://aisibuhuipao.github.io/tags/Hugo/"/>
     
   </entry>
   
