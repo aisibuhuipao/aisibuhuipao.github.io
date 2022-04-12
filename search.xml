@@ -61,7 +61,7 @@
     
     
     <entry>
-      <title>Redis未授权与主从复制</title>
+      <title>复现Redis未授权与主从复制</title>
       <link href="/2022/03/19/Redis%E6%9C%AA%E6%8E%88%E6%9D%83/"/>
       <url>/2022/03/19/Redis%E6%9C%AA%E6%8E%88%E6%9D%83/</url>
       
@@ -213,9 +213,9 @@
       
         <tags>
             
-            <tag> 思维脑图 </tag>
-            
             <tag> windows </tag>
+            
+            <tag> 思维脑图 </tag>
             
         </tags>
       
